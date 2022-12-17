@@ -1,0 +1,7 @@
+class Solution(object):
+    def maxProduct(self, nums):
+        l=len(nums)
+        nums.sort()
+        i=nums[l-1]
+        j=nums[l-2]
+        return((i-1)*(j-1))
