@@ -1,0 +1,7 @@
+class Solution(object):
+    def runningSum(self, nums):
+        i=[0]*(len(nums)+1)
+        for k in range (len(nums)):
+            i[k+1]=i[k]+nums[k]
+        i.remove(i[0])    
+        return i
