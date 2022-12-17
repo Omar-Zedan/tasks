@@ -1,0 +1,13 @@
+class Solution(object):
+    def countMatches(self, items, ruleKey, ruleValue):
+        k=0
+        if ruleKey=="type":
+            i=0
+        elif ruleKey=="color":
+            i=1
+        else:
+            i=2
+        for j in range(len(items)):
+            if items[j][i]==ruleValue:
+                k+=1    
+        return k        
