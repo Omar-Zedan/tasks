@@ -1,0 +1,17 @@
+class Solution(object):
+    def findLucky(self, arr):
+        lucky =-1
+        s=[0]*(500)
+        k=[]
+        for i in range(500):
+            for j in range(len(arr)):
+                if i==arr[j]:
+                    s[i]+=1
+            
+        for j in range (len(s)):
+            if j==s[j]:
+                k.append(j)   
+        if max(k)==0:
+            return -1
+        else:                 
+            return max(k)
